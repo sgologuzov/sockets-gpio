@@ -1,6 +1,7 @@
 const vm = require('vm');
 const gpio = require('odroid-gpio');
 const express = require('express');  //web server
+const sleep = require('sleep');
 
 app = express();
 server = require('http').createServer(app);
@@ -22,6 +23,15 @@ function setDiagramPin(channel, value) {
     });
 }
 
+function delayMs(value) {
+    sleep.msleep(value);
+}
+
+const sandbox = {
+    jsPrint: jsPrint,
+    setDiagramPin: setDiagramPin,
+    delayMs: delayMs
+};
 
 io.sockets.on('connection', function (socket) { //gets called whenever a client connects
     socket.emit('led', {value: brightness}); //send the new client the current brightness
@@ -35,6 +45,6 @@ io.sockets.on('connection', function (socket) { //gets called whenever a client 
     socket.on("javascript_code", function(data) {
         console.log("javascript_code= " + data);
         var script = new vm.Script(data, { filename: 'javascript_code.vm' });
-        script.runInThisContext();
+        script.runInNewContext(sandbox);
     });
 });
