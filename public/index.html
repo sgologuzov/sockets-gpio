@@ -39,11 +39,11 @@
       <table id="pinoutTable">
         <tbody>
           <tr>
-            <th class="noborder">BCM</th>
-            <th class="noborder">Altern</th>
+            <th class="noborder">GPIO</th>
+            <th class="noborder">Label</th>
             <th class="noborder" colspan="2">Header</th>
-            <th class="noborder">Altern</th>
-            <th class="noborder">BCM</th>
+            <th class="noborder">Label</th>
+            <th class="noborder">GPIO</th>
           </tr>
           <tr>
             <td>-</td>
@@ -54,47 +54,47 @@
             <td align="center">-</td>
           </tr>
           <tr>
-            <td>2</td>
-            <td><span class="piI2c">SDA</span></td>
+            <td>-</td>
+            <td><span class="piI2c">I2CA_SDA</span></td>
             <th id="pin3">3</th>
             <th id="pin4">4</th>
             <td><span class="pinVolt">5v</span></td>
             <td>-</td>
           </tr>
           <tr>
-            <td>3</td>
-            <td><span class="piI2c">SCL</span></td>
+            <td>-</td>
+            <td><span class="piI2c">I2CA_SCL</span></td>
             <th id="pin5">5</th>
             <th id="pin6">6</th>
             <td><span class="pinGround">0v</span></td>
             <td>-</td>
           </tr>
           <tr>
-            <td>4</td>
-            <td><span class="piGpio">GPCLK0</span></td>
+            <td>7</td>
+            <td><span class="piGpio">-</span></td>
             <th id="pin7">7</th>
             <th id="pin8">8</th>
-            <td><span style="color: #ffff00;">TxD</span></td>
-            <td>14</td>
+            <td><span style="color: #ffff00;">TXD_B</span></td>
+            <td>-</td>
           </tr>
           <tr>
             <td>-</td>
             <td><span class="pinGround">0v</span></td>
             <th id="pin9">9</th>
             <th id="pin10">10</th>
-            <td><span style="color: #ffff00;">RxD</span></td>
-            <td>15</td>
+            <td><span style="color: #ffff00;">RXD_B</span></td>
+            <td>-</td>
           </tr>
           <tr>
-            <td>17</td>
+            <td>0</td>
             <td><span class="piGpio">-</span></td>
             <th id="pin11">11</th>
             <th id="pin12">12</th>
-            <td><span class="piGpio">PWM0</span></td>
-            <td>18</td>
+            <td><span class="piGpio">-</span></td>
+            <td>1</td>
           </tr>
           <tr>
-            <td>27</td>
+            <td>2</td>
             <td><span class="piGpio">-</span></td>
             <th id="pin13">13</th>
             <th id="pin14">14</th>
@@ -102,12 +102,12 @@
             <td>-</td>
           </tr>
           <tr>
-            <td>22</td>
+            <td>3</td>
             <td><span class="piGpio">-</span></td>
             <th id="pin15">15</th>
             <th id="pin16">16</th>
             <td><span class="piGpio">-</span></td>
-            <td>23</td>
+            <td>4</td>
           </tr>
           <tr>
             <td>-</td>
@@ -115,46 +115,102 @@
             <th id="pin17">17</th>
             <th id="pin18">18</th>
             <td><span class="piGpio">-</span></td>
-            <td>24</td>
+            <td>5</td>
           </tr>
           <tr>
-            <td>10</td>
-            <td><span class="piSpi">MOSI</span></td>
+            <td>12</td>
+            <td><span class="piGpio">-</span></td>
             <th id="pin19">19</th>
             <th id="pin20">20</th>
             <td><span class="pinGround">0v</span></td>
             <td>-</td>
           </tr>
           <tr>
-            <td>9</td>
-            <td><span class="piSpi">MISO</span></td>
+            <td>13</td>
+            <td><span class="piGpio">-</span></td>
             <th id="pin21">21</th>
             <th id="pin22">22</th>
             <td><span class="piGpio">-</span></td>
-            <td>25</td>
+            <td>6</td>
           </tr>
           <tr>
-            <td>11</td>
-            <td><span class="piSpi">SCLK</span></td>
+            <td>14</td>
+            <td><span class="piGpio">-</span></td>
             <th id="pin23">23</th>
             <th id="pin24">24</th>
-            <td><span class="piSpi">CE0</span></td>
-            <td>8</td>
+            <td><span class="piGpio">-</span></td>
+            <td>10</td>
           </tr>
           <tr>
             <td>-</td>
             <td><span class="pinGround">0v</span></td>
             <th id="pin25">25</th>
             <th id="pin26">26</th>
-            <td><span class="piSpi">CE1</span></td>
-            <td>7</td>
+            <td><span class="piGpio">-</span></td>
+            <td>11</td>
           </tr>
           <tr>
-            <th class="noborder">BCM</th>
-            <th class="noborder">Altern</th>
+            <td>-</td>
+            <td><span class="piI2c">I2CB_SDA</span></td>
+            <th id="pin27">27</th>
+            <th id="pin28">28</th>
+            <td><span class="piI2c">I2CB_SCL</span></td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td><span class="piGpio">-</span></td>
+            <th id="pin29">29</th>
+            <th id="pin30">30</th>
+            <td><span class="pinGround">0v</span></td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td><span class="piGpio">-</span></td>
+            <th id="pin31">31</th>
+            <th id="pin32">32</th>
+            <td><span class="piGpio">-</span></td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td><span class="piGpio">-</span></td>
+            <th id="pin33">33</th>
+            <th id="pin34">34</th>
+            <td><span class="pinGround">0v</span></td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td><span class="piGpio">-</span></td>
+            <th id="pin35">35</th>
+            <th id="pin36">36</th>
+            <td><span class="piGpio">-</span></td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td><span class="piI2c">AIN1</span></td>
+            <th id="pin37">37</th>
+            <th id="pin38">38</th>
+            <td><span class="pinVolt">1.8V</span></td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td><span class="pinGround">0v</span></td>
+            <th id="pin39">39</th>
+            <th id="pin40">40</th>
+            <td><span class="piI2c">AIN0</span></td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th class="noborder">GPIO</th>
+            <th class="noborder">Label</th>
             <th class="noborder" colspan="2">Header</th>
-            <th class="noborder">Altern</th>
-            <th class="noborder">BCM</th>
+            <th class="noborder">Label</th>
+            <th class="noborder">GPIO</th>
           </tr>
         </tbody>
       </table>
@@ -227,7 +283,7 @@
       </value>
       <next>
         <block type="led_set">
-          <field name="PIN">3</field>
+          <field name="PIN">7</field>
           <value name="STATE">
             <block type="pin_binary">
               <field name="STATE">HIGH</field>
@@ -242,7 +298,7 @@
               </value>
               <next>
                 <block type="led_set">
-                  <field name="PIN">3</field>
+                  <field name="PIN">7</field>
                   <value name="STATE">
                     <block type="pin_binary">
                       <field name="STATE">LOW</field>
@@ -264,7 +320,7 @@
                           </value>
                           <statement name="DO">
                             <block type="led_set">
-                              <field name="PIN">5</field>
+                              <field name="PIN">0</field>
                               <value name="STATE">
                                 <block type="pin_binary">
                                   <field name="STATE">HIGH</field>
@@ -279,7 +335,7 @@
                                   </value>
                                   <next>
                                     <block type="led_set">
-                                      <field name="PIN">5</field>
+                                      <field name="PIN">0</field>
                                       <value name="STATE">
                                         <block type="pin_binary">
                                           <field name="STATE">LOW</field>
@@ -302,7 +358,7 @@
                           </statement>
                           <next>
                             <block type="led_set">
-                              <field name="PIN">7</field>
+                              <field name="PIN">2</field>
                               <value name="STATE">
                                 <block type="pin_binary">
                                   <field name="STATE">HIGH</field>
@@ -317,7 +373,7 @@
                                   </value>
                                   <next>
                                     <block type="led_set">
-                                      <field name="PIN">7</field>
+                                      <field name="PIN">2</field>
                                       <value name="STATE">
                                         <block type="pin_binary">
                                           <field name="STATE">LOW</field>

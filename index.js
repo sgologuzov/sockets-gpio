@@ -4,7 +4,7 @@ const express = require('express');  //web server
 const sleep = require('sleep');
 
 app = express();
-server = require('http').createServer(app);
+var server = require('http').createServer(app);
 io = require('socket.io').listen(server);	//web socket server
 
 server.listen(8080); //start the webserver on port 8080
