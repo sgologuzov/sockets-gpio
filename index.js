@@ -17,7 +17,7 @@ function jsPrint(text) {
 }
 
 function setDiagramPin(channel, value) {
-    gpio.write(channel, value);
+    gpio.write(channel, value? 1 : 0);
 }
 
 function delayMs(value) {
