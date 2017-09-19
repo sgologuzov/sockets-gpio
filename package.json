@@ -19,7 +19,7 @@
   "dependencies": {
     "es6-shim": "^0.35.3",
     "express": "^4.15.4",
-    "odroid-gpio": "github:joebots/odroid-gpio",
+    "odroid-gpio": "github:joebots/odroid-c2-gpio",
     "sleep": "^5.1.1",
     "socket.io": "^2.0.3"
   }

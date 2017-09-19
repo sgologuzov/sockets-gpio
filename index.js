@@ -1,5 +1,5 @@
 const vm = require('vm');
-const gpio = require('odroid-gpio');
+const gpio = require('odroid-c2-gpio');
 const express = require('express');  //web server
 const sleep = require('sleep');
 
@@ -17,10 +17,7 @@ function jsPrint(text) {
 }
 
 function setDiagramPin(channel, value) {
-    gpio.write(channel, value, function(err) {
-        if (err) throw err;
-        console.log('Written to pin');
-    });
+    gpio.write(channel, value);
 }
 
 function delayMs(value) {
